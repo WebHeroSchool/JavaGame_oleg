@@ -1,0 +1,141 @@
+
+.wrapper {
+  height: 100vh;
+  background: url(img/Background.jpg);
+  background-size: cover;
+  padding-top: 180px;
+  box-sizing: border-box;
+  height: 1200px;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+body {
+  margin: 0;
+}
+
+.start {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+  margin: 60px;
+}
+
+.main__imgaes {
+  background: url(img/cards.png);
+  float: right;
+  height: 466px;
+  width: 604px;
+  right: 0px;
+  top: 30%;
+}
+
+.title {
+  width: 700px;
+  height: 100px;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  color: #fff;
+}
+
+.title h1 {
+  font: bold 42px/2px Roboto, sans-serif;
+}
+
+.title p {
+  font: normal 14px/17px Roboto, sans-serif;
+}
+
+.game__size {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 800px;
+}
+
+.game {
+  margin: auto;
+}
+
+.menu {
+  font: 700 37px/2px Roboto, sans-serif;
+  width: 700px;
+  height: 100px;
+  position: relative;
+  margin-top: 90px;
+  left: 5%;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.select__menu:before {
+  content: attr(data-icon);
+  position: absolute;
+  margin-left: -35px;
+  color: #D62B2E;
+}
+
+a:hover:before {
+  content: attr(data-icon);
+  position: absolute;
+  margin-left: -35px;
+  color: #D62B2E;
+}
+
+button {
+  width: 222px;
+  height: 65px;
+  position: relative;
+  margin-top: 90px;
+  left: 5%;
+  color: #fff;
+  font-size: 32px;
+  background: #D62B2E;
+  border-radius: 7px;
+  border: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  float: left;
+  width: 222px;
+  height: 345px;
+  margin: 20px;
+  transition: transform .5s ease;
+}
+
+.card:hover {
+  transform: translate3d(-20px, -20px, 0px);
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.trans{
+   transform: rotateY(180deg);
+}
