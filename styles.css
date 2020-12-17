@@ -112,6 +112,7 @@ button {
 
 .card:hover {
   transform: translate3d(-20px, -20px, 0px);
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
 }
 
 .card-inner {
